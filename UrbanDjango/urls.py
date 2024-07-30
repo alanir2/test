@@ -16,9 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from task3.views import index, categories, platform
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('task2.urls')),
-    # path('cat/', views.categories)
+    path('', include('task3.urls')),
+
+
 ]
