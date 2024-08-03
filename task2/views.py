@@ -6,9 +6,8 @@ from django.template.loader import render_to_string
 
 
 def index(request):
-    # t=render_to_string('second_task/class_template.html')
-    # return HttpResponse(t)
-    return render(request, 'second_task/class_template.html')
+
+    return render(request, 'second_task/func_template.http')
 
 class index2(TemplateView):
-    template_name = 'func_template.http'
+    template_name = 'class_template.html'
