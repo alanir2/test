@@ -10,6 +10,5 @@ def index(request):
     # return HttpResponse(t)
     return render(request, 'second_task/class_template.html')
 
-def categories(request):
-    # return HttpResponse('Страница приложения cat')
-    return render(request, 'second_task/func_template.html')
+class index2(TemplateView):
+    template_name = 'func_template.http'
