@@ -26,4 +26,5 @@ urlpatterns = [
     path('', index),
     # path('class_view/', index2.as_view()),
     path('platform/', include('task4.urls')),
+    path('regist/', include('task5.urls')),
 ]
