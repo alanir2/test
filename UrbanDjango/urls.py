@@ -16,12 +16,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from task3.views import index, categories, platform
+from task2.views import index, index2
+# from task3.views import index
+from UrbanDjango import settings
+from django.views.generic import TemplateView
+
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('task2.urls')),
-    path('', include('task3.urls')),
-
-
+    path('', index),
+    # path('class_view/', index2.as_view()),
+    path('platform/', include('task4.urls')),
 ]

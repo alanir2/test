@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Games</title>
+</head>
+<body>
+    {% block pagename %}
+        <h1>Игры</h1>
+    {% endblock pagename %}
+
+    {% include 'fourth_task/menu.html' %}
+
+    {% block content %}
+
+        {% for i in games %}
+            <p>{{i}} <button>Купить</button> </p>
+        {% endfor %}
+
+        <button>Вернуться обратно</button>
+    {% endblock content %}
+</body>
+</html>
